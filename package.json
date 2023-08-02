@@ -1,0 +1,19 @@
+{
+  "name": "cypressautomationsimi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\bin.\\cypress run",
+    "cypress-cloud": "npx cypress run --record --key 11fc0bf6-d78c-432c-87f7-9c1df7db2f13"
+  },
+  "author": "simi",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.4",
+    "cypress": "^12.17.0",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  }
+}
