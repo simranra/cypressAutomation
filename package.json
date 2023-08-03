@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules\\bin.\\cypress run",
-    "cypress-cloud": "npx cypress run --record --key 11fc0bf6-d78c-432c-87f7-9c1df7db2f13"
+    "test": "node_modules run",
+    "cypress-cloud-headed": "npx cypress run --browser chrome --headed --spec cypress/e2e/Cypress-RPA/Login.cy.js --record --key 11fc0bf6-d78c-432c-87f7-9c1df7db2f13",
+    "cypress-cloud-headless": "npx cypress run --spec cypress/e2e/Cypress-RPA/Login.cy.js --record --key 11fc0bf6-d78c-432c-87f7-9c1df7db2f13"
+    
   },
   "author": "simi",
   "license": "ISC",

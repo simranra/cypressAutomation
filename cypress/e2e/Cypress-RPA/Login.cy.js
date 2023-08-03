@@ -6,21 +6,21 @@ describe("Login", ()=>{
         cy.get("a").contains("Don't have an account? Sign Up").click();
         cy.get("#firstName").type("test-dummy")
         cy.get("#lastName").type("user")
-        cy.get("#username").type("test-dummy")
+        cy.get("#username").type("test-dummyy")
         cy.get("#password").type("09876")
         cy.get("#confirmPassword").type("09876")
-        cy.get(".MuiButtonBase-root > .MuiButton-label").click(); 
+        cy.get(".MuiButtonBase-root > .MuiButton-label").click();
         cy.wait(2000)
 
         //Login
-        cy.get("#username").type("test-dummy") //Simi123456
+        cy.get("#username").type("test-dummyy") //Simi123456
         cy.get("#password").type("09876") //123456
         cy.get(".MuiIconButton-label").click();
         cy.get(".MuiButton-label").click()
         cy.wait(2000)
 
         //Onboarding
-        cy.get(".MuiButtonBase-root > .MuiButton-label").contains("Next").click();
+       cy.get(".MuiButtonBase-root > .MuiButton-label").contains("Next").click();
         cy.get("#bankaccount-bankName-input").type("HDFC LTD");
         cy.get("#bankaccount-routingNumber-input").type("123456789")
         cy.get("#bankaccount-accountNumber-input").type("009877654326")
